@@ -12,17 +12,21 @@
         #word-count {
             float: right;
         }
+        #btn-wrapper {
+            margin: 10px;
+            margin-left: 40%;
+        }
     </style>
 </head>
 <body class="container">
     <h1></h1>
     <textarea onkeydown="counting();" class="form-control" rows="5" id="word-length"></textarea>
-    <span id = "word-count"></span>
+    <button onclick="counting();" id="btn-wrapper">계산하기</button>
+    <span id="word-count"></span>
     <script>
         function counting(){
             var content = document.getElementById('word-length').value;
             document.getElementById('word-count').innerHTML = "( " +content.length + "자 )"
- 
         };
         counting();
     </script>
