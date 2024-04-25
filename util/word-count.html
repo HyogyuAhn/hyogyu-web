@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>글자수 계산기</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            h1 {
+                margin-top: 25px;
+            }
+            #word-count {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body class="container">
+        <h1>글자수 계산기</h1>
+        <textarea onkeydown="counting();" class="form-control" rows="10" id="sentence"></textarea>
+        <span id="word-count"></span>
+        
+        <script>
+            function counting() {
+                var content = document.getElementById("sentence").value();
+                document.getElementById("word-count").innerHTML = "(" + content.length + "자)"
+            };
+            counting();
+        </script>
+    </body>
+</html>
