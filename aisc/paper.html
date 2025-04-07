@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>학술부</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                background: linear-gradient(to right, #f0f2f5, #c9d6ff);
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+
+            .link-button {
+                display: inline-block;
+                margin-top: 1.5rem;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+                color: white;
+                background-color: #4a90e2;
+                border: none;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+            .link-button:hover {
+                background-color: #357ABD;
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                }
+            }
+
+            @media (min-width: 769px) {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>인공지능공학과 학술부 논문 보러가기!</h1>
+            <a href="#" class="link-button">논문 보러가기</a>
+        </div>
+    </body>
+</html>
